@@ -1,0 +1,27 @@
+<!-- templates/components/navbar.html -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">Pet Adote</a>
+    <div class="d-flex align-items-center ms-auto gap-3">
+      <a href="{% url 'feed' %}" class="fw-bold" style="color: #ffffff">
+        <i class="fas fa-home me-1"></i> Home
+      </a>
+
+      <a href="{% url 'perfil' %}" class="fw-bold" style="color: #ffffff">
+        <i class="fas fa-user me-1"></i> Perfil
+      </a>
+
+      <a
+        href="{% url 'minhas_adocoes' %}"
+        class="fw-bold"
+        style="color: #ffffff"
+      >
+        <i class="fas fa-heart me-1"></i> Minhas adoções
+      </a>
+
+      <a href="{% url 'logout' %}" class="btn btn-logout">
+        <i class="fas fa-sign-out-alt"></i> Sair
+      </a>
+    </div>
+  </div>
+</nav>
